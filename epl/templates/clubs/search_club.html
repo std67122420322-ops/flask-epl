@@ -1,0 +1,11 @@
+{% for club in clubs %}
+  <tr>
+    <td>{{loop.index}}</td>
+    <td>{{club.name}}</td>
+    <td>
+      <a href="#" class="btn btn-outline-info btn-sm">
+        <i class="bi bi-info-circle"></i>
+      </a>
+    </td>
+  </tr>
+{% endfor %}
