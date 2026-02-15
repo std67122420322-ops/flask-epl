@@ -9,8 +9,8 @@ def create_app():
   app = Flask(__name__)
   #app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost/epl_s02_db'
   app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:@localhost/epl_s02'
-  app.secret_key = b'Oat'
-  
+  app.secret_key = b'sumate' 
+
   db.init_app(app)
   migrate.init_app(app, db)
 
